@@ -1,7 +1,6 @@
 #include "tas5806.h"
 
 
-#include <driver/i2c.h>
 
 #include "esphome/core/application.h"
 #include "esphome/core/hal.h"
