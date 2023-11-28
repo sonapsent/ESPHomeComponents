@@ -1,0 +1,13 @@
+external_components:
+  - source: github://bozzobrain/ESPHomeComponents
+    components: [ tas5806 ]
+    refresh: 0s
+
+# Set a global I²C connection
+i2c:
+  sda: 25
+  scl: 21
+  scan: true
+
+# Set the component with default (address: 0x60 / global I²C)
+tas5806:
