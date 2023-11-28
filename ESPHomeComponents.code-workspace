@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../esphome"
+		},
+		{
+			"path": "../ArduinoJson"
+		}
+	],
+	"settings": {
+		"C_Cpp.default.includePath": [
+			"../ArduinoJson",
+			"../ArduinoJson/src",
+			"../esphome"
+		],
+		"files.associations": {
+			"*.embeddedhtml": "html",
+			"memory": "cpp"
+		},
+		"C_Cpp.codeAnalysis.clangTidy.enabled": true
+	}
+}
