@@ -245,5 +245,3 @@ i2c:
 
 # Set the component with default (address: 0x60 / global I²C)
 tas5806:
-  - id: dac_output
-  - address: 45
