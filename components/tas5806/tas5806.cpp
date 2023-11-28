@@ -1,6 +1,5 @@
 #include "tas5806.h"
 
-#ifdef USE_ESP32
 
 #include <driver/i2c.h>
 
@@ -30,7 +29,7 @@ static const uint8_t[2] TAS5806_CONFIGURE_PBTL = {TAS5806_DEVICE_CTRL_1_REG,DEVI
 
 static const char *const TAG = "tas5806";
 
-void MCP4728Component::dump_config() {
+void TAS5806::dump_config() {
   ESP_LOGCONFIG(TAG, "TAS5806:");
   LOG_I2C_DEVICE(this);
   if (this->is_failed()) {
@@ -69,5 +68,3 @@ void TAS5806::setup() {
 
 }  // namespace tas5806
 }  // namespace esphome
-
-#endif  // USE_ESP32

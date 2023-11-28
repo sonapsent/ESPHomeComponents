@@ -1,7 +1,5 @@
 #pragma once
 
-#ifdef USE_ESP32
-
 
 #include <driver/i2c.h>
 
@@ -28,5 +26,3 @@ class TAS5806 : public Component, public i2c::I2CDevice {
 
 }  // namespace tas5806
 }  // namespace esphome
-
-#endif  // USE_ESP32
