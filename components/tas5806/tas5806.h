@@ -14,6 +14,7 @@ namespace tas5806 {
 
 class TAS5806 : public Component, public i2c::I2CDevice {
  public:
+  TAS5806()  {}
   float get_setup_priority() const override { return setup_priority::HARDWARE; }
 
   void dump_config() override;
