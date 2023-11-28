@@ -236,3 +236,4 @@ external_components:
   - source: github://bozzobrain/ESPHomeComponents
     components: [ tas5806 ]
 esp_adf:
+tas5806:
