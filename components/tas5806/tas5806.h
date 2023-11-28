@@ -4,7 +4,7 @@
 #include <driver/i2c.h>
 
 #include "esphome/core/component.h"
-#include "esphome/components/i2c/i2c.h"
+//#include "esphome/components/i2c/i2c.h"
 
 namespace esphome {
 namespace tas5806 {
