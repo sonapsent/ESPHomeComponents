@@ -233,6 +233,6 @@ external_components:
     components:
       - esp_adf
     refresh: 0s
-  - source: github://bozzobrain/ESPHomeComponents/pwave_amplifier_v0.yaml@main
+  - source: github://bozzobrain/ESPHomeComponents
     components: [ tas5806 ]
 esp_adf:
