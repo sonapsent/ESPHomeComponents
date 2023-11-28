@@ -237,3 +237,4 @@ external_components:
     components: [ tas5806 ]
 esp_adf:
 tas5806:
+  - platform: i2c
