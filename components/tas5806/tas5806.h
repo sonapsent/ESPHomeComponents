@@ -12,7 +12,7 @@ namespace esphome {
 namespace tas5806 {
 
 
-class TAS5806 : public Component, public i2c::I2CDevice {
+class TAS5806 : public Component, public i2c::I2CDevice, public output::FloatOutput {
  public:
   float get_setup_priority() const override { return setup_priority::HARDWARE; }
 
