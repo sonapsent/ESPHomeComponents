@@ -20,6 +20,9 @@
 			"*.embeddedhtml": "html",
 			"memory": "cpp"
 		},
-		"C_Cpp.codeAnalysis.clangTidy.enabled": true
+		"C_Cpp.codeAnalysis.clangTidy.enabled": false,
+		"[php]": {
+			"editor.defaultFormatter": null
+		},
 	}
 }
