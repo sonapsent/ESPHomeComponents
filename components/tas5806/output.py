@@ -12,7 +12,14 @@ tas5806_ns = cg.esphome_ns.namespace("tas5806")
 TAS5806 = tas5806_ns.class_("TAS5806", cg.Component, i2c.I2CDevice, output.FloatOutput)
 CONF_TAS5806_ID = "tas5806_id"
 
-CONFIG_SCHEMA = (
+CONFIG_SCHEMA = ( 
+    cv.Schema(
+        {
+            cv.GenerateID(): cv.declare_id(TAS5806),
+        }
+    )
+    .extend(cv.COMPONENT_SCHEMA)
+    .extend(i2c.i2c_device_schema(0x2D)),
      output.FLOAT_OUTPUT_SCHEMA.extend(
         {
             cv.Required(CONF_ID): cv.declare_id(TAS5806),      
