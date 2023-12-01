@@ -6,7 +6,7 @@
 #include "esphome/components/output/float_output.h"
 
 namespace esphome {
-namespace tas5806volume {
+namespace tas5806 {
 
 
 class TAS5806Volume : public Component, public output::FloatOutput {
