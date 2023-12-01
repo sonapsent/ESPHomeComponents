@@ -72,10 +72,6 @@ void TAS5806::loop() {
   }
 }
 
-void TAS5806::write_state(float state) {
-  setVolume(state);
-  this->volume_ = state;
-}
 
 void TAS5806::setVolume(float vol) {
   uint8_t ivol = (uint8_t) vol;
