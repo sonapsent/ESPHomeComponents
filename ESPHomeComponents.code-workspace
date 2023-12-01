@@ -18,11 +18,17 @@
 		],
 		"files.associations": {
 			"*.embeddedhtml": "html",
-			"memory": "cpp"
+			"memory": "cpp",
+			"iosfwd": "cpp",
+			"xlocbuf": "cpp"
 		},
 		"C_Cpp.codeAnalysis.clangTidy.enabled": false,
 		"[php]": {
 			"editor.defaultFormatter": null
 		},
+		"python.autoComplete.extraPaths": [
+			"../esphome",
+			"../esphome/esphome"
+		],
 	}
 }

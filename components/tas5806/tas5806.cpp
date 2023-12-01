@@ -66,5 +66,26 @@ void TAS5806::setup() {
   }
 }
 
+void TAS5806::loop() {
+  if (this->update_) {
+    this->update_ = false;
+  }
+}
+
+void TAS5806::write_state(float state) {
+  setVolume(state);
+  this->volume_ = state;
+}
+
+void TAS5806::setVolume(float vol) {
+  uint8_t ivol = (uint8_t) vol;
+  if (this->write_bytes(TAS5806_VOL_REG, &ivol, 1) != i2c::ERROR_OK) {
+    this->status_set_warning();
+    return;
+  } else {
+    ESP_LOGCONFIG(TAG, "Volume set to %f", vol);
+  }
+}
+
 }  // namespace tas5806
 }  // namespace esphome
