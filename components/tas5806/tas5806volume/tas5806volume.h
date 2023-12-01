@@ -3,14 +3,13 @@
 
 
 #include "esphome/core/component.h"
-#include "esphome/components/i2c/i2c.h"
 #include "esphome/components/output/float_output.h"
 
 namespace esphome {
 namespace tas5806volume {
 
 
-class TAS5806Volume : public Component, public i2c::I2CDevice, public output::FloatOutput {
+class TAS5806Volume : public Component, public output::FloatOutput {
  public:
   TAS5806Volume()  {}
   
