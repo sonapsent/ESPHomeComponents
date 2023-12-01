@@ -23,6 +23,10 @@ CONFIG_SCHEMA = (
 
 
 async def to_code(config):
-    var = cg.new_Pvariable(config[CONF_ID])
+    var = cg.new_Pvariable(config[CONF_ID])    
+    # override default min power to 10%
+    #if CONF_MIN_POWER not in config:
+    #    config[CONF_MIN_POWER] = 0.1
+    await output.register_output(var, config)
     await cg.register_component(var, config)
     await i2c.register_i2c_device(var, config)
