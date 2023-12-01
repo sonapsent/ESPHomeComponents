@@ -66,11 +66,7 @@ void TAS5806::setup() {
   }
 }
 
-void TAS5806::loop() {
-  if (this->update_) {
-    this->update_ = false;
-  }
-}
+
 
 
 void TAS5806::setVolume(float vol) {
