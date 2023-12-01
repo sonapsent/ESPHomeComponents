@@ -19,7 +19,6 @@ class TAS5806 : public Component, public i2c::I2CDevice{
   void loop() override;
   void setVolume(float vol);
   
-  const optional<float> &get_volume() const { return volume_; }
  protected:
  
  private: 
