@@ -8,6 +8,7 @@
 namespace esphome {
 namespace tas5806 {
 
+class TAS5806Volume;
 
 class TAS5806 : public Component, public i2c::I2CDevice{
  public:
@@ -21,6 +22,7 @@ class TAS5806 : public Component, public i2c::I2CDevice{
   
  protected:
  
+  friend TAS5806Volume;
  private: 
   float volume_ = 50.0f;
   bool update_ = false;
