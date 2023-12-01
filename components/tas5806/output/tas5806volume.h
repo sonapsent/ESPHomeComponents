@@ -18,8 +18,6 @@ class TAS5806Volume : public Component, public output::FloatOutput {
   void write_state(float state) override;
   TAS5806 *parent_;
  private: 
-  float volume_ = 50.0f;
-  bool update_ = false;
 
 };
 
