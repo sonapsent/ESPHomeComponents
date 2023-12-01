@@ -30,5 +30,8 @@
 			"../esphome",
 			"../esphome/esphome"
 		],
+		"python.analysis.extraPaths": [
+			"../esphome"
+		],
 	}
 }
