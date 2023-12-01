@@ -19,13 +19,8 @@ CONFIG_SCHEMA = (
         }
     )
     .extend(cv.COMPONENT_SCHEMA)
-    .extend(i2c.i2c_device_schema(0x2D)),
-     output.FLOAT_OUTPUT_SCHEMA.extend(
-        {
-            cv.Required(CONF_ID): cv.declare_id(TAS5806),      
-        }
-    ).extend(cv.COMPONENT_SCHEMA)    
     .extend(i2c.i2c_device_schema(0x2D))
+    .extend(output.FloatOutput)
 )
 
 
