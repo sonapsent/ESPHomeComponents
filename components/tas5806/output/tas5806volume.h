@@ -12,7 +12,10 @@ namespace tas5806 {
 
 class TAS5806Volume : public Component, public output::FloatOutput {
  public:
-  TAS5806Volume(TAS5806 *parent)  {parent_ = parent;}  
+  TAS5806Volume(TAS5806 *parent)  {
+    parent_ = parent;
+    parent_-> setVolume(10);
+    }  
   
  protected:
   void write_state(float state) override;
