@@ -5,7 +5,7 @@
 #include "esphome/core/log.h"
 
 namespace esphome {
-namespace tas5806volume {
+namespace tas5806 {
 
 static const char *const TAG = "tas5806volume";
 
