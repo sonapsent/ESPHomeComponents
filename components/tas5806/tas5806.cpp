@@ -69,9 +69,8 @@ void TAS5806::setup() {
   }
 }
 
-void TAS5806::setVolume(float vol) {
-  uint8_t ivol = (uint8_t) vol;
-  if (this->write_bytes(TAS5806_VOL_REG, &ivol, 1) != i2c::ERROR_OK) {
+void TAS5806::setVolume(uint8_t vol) {
+  if (this->write_bytes(TAS5806_VOL_REG, &vol, 1) != i2c::ERROR_OK) {
     this->status_set_warning();
     return;
   } else {

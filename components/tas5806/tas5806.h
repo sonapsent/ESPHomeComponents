@@ -17,7 +17,7 @@ class TAS5806 : public Component, public i2c::I2CDevice{
 
   void dump_config() override;
   void setup() override;
-  void setVolume(float vol);
+  void setVolume(uint8_t vol);
   
  protected:
  
