@@ -74,7 +74,7 @@ void TAS5806::setVolume(uint8_t vol) {
     this->status_set_warning();
     return;
   } else {
-    ESP_LOGCONFIG(TAG, "Volume set to %f", vol);
+    ESP_LOGCONFIG(TAG, "Volume set to %d", vol);
   }
 }
 
