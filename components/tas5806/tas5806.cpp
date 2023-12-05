@@ -58,7 +58,7 @@ void TAS5806::setup() {
   }
 
   //Set default volume
-  this->setVolume(150);
+  this->setVolume(100);
 
   // Set PLAY
   if (this->write(TAS5806_CONFIGURE_PLAY, 2) != i2c::ERROR_OK) {
