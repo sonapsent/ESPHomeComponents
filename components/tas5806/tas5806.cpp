@@ -57,6 +57,9 @@ void TAS5806::setup() {
     ESP_LOGCONFIG(TAG, "Set PBTL");
   }
 
+  //Set default volume
+  this->setVolume(40);
+
   // Set PLAY
   if (this->write(TAS5806_CONFIGURE_PLAY, 2) != i2c::ERROR_OK) {
     this->status_set_warning();
@@ -65,9 +68,6 @@ void TAS5806::setup() {
     ESP_LOGCONFIG(TAG, "Configured to Play - Ready");
   }
 }
-
-
-
 
 void TAS5806::setVolume(float vol) {
   uint8_t ivol = (uint8_t) vol;
