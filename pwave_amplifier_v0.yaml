@@ -18,7 +18,8 @@ api:
 ota:
 
 dashboard_import:
-  package_import_url: github://esphome/firmware/voice-assistant/m5stack-atom-echo.yaml@main
+#  package_import_url: github://esphome/firmware/voice-assistant/m5stack-atom-echo.yaml@main
+  package_import_url: github://sonapsent/ESPHomeComponents/pwave_amplifier_v0.yaml@main
 
 wifi:
   on_connect:
