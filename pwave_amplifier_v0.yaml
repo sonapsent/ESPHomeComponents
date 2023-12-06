@@ -230,10 +230,10 @@ switch:
       - script.execute: reset_led
 
 external_components:
-  - source: github://esphome/esphome/pull/5230
-    components:
-      - esp_adf
-    refresh: 0s
+#  - source: github://esphome/esphome/pull/5230
+#    components:
+#      - esp_adf
+#    refresh: 0s
   - source: github://bozzobrain/ESPHomeComponents
     components: [ tas5806 ]
 esp_adf:
