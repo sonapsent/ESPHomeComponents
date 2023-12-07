@@ -232,7 +232,6 @@ switch:
 external_components:
   - source: github://bozzobrain/ESPHomeComponents
     components: [ tas5806 ]
-#esp_adf:
 
 # Set a global I²C connection
 i2c:
